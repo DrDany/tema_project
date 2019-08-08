@@ -1,4 +1,4 @@
-import  requests
+import requests
 
 url = 'https://blockchain.info/ru/ticker'
 a = requests.get(url)
