@@ -1,3 +1,10 @@
 Faker==0.7.11
 Flask==0.12.1
+<<<<<<< HEAD
 requests
+=======
+requests
+gevent
+gunicorn
+>>>>>>> 9ac9e1078757ec127a3e7a1bbbff1229d5a33069
+psycopg2
