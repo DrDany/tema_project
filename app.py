@@ -8,12 +8,19 @@ from flask import Response
 app = Flask(__name__)
 
 
-@app.route("/")
+# @app.route("/")
+# def index():
+#     '''
+#     Home page
+#     '''
+#     return render_template('.html')
+
+@app.route("/tst")
 def index():
     '''
-    Home page
-    '''
-    return redirect(url_for('view'))
+    index page
+   '''
+    return render_template('web/tst.html')
 
 
 @app.route("/main")
