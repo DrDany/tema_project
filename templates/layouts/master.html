@@ -6,7 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}{% endblock %} | Комментарии </title>
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/hover-min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/animate.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/owl.carousel.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/owl.theme.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/owl.theme.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/owl.theme.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/owl.theme.css') }}" rel="stylesheet">
+
+
+<!-- это пока тут оставляем
+
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+ -->
+
+
+
+
+
+
+
+
+
+
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -32,9 +59,54 @@
 <div class="container">
     {% block body %}{% endblock %}
 </div>
-<script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+
+<footer>
+    <div id="lgx-footer" class="lgx-footer">
+        <div class="container">
+            <div class="lgx-content">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="text-center lgx-copy">
+                            2015, Summer Beauty - красочынй летний шаблон сайта. <a href="http://html6.com.ru">HTML.COM.RU</a>
+                        </p>
+                    </div> <!--//.COL-->
+                </div> <!--//.ROW-->
+            </div> <!--//.LGX CONTENT CONTENT-->
+        </div> <!--//.CONTAINER-->
+    </div><!--//.LGX SECTION -->
+</footer>
+<!-- *************  //FOOTER END  ************* -->
+
+<!-- //SITE CONTENT END -->
+
+</div> <!--//.LGX CONTAINER-->
+
+
+<!-- *** ADD YOUR SITE SCRIPT HERE *** -->
+
+
+<!-- *** с  гугл мапами пока не понятно*** -->
+{##}
+{#<!-- GOOGLE MAP API -->#}
+{#<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>#}
+{##}
+{#<!-- CUSTOM GOOGLE MAP -->#}
+{#<script type="text/javascript" src="js/jquery.googlemap.js"></script>#}
+
+
+<script src="{{ url_for('static', filename='js/custom.script.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.validate.js') }}"></script>
+<script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/appear.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/lgx-filter.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.quicksand.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.easing.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.googlemap.js') }}"></script>
+<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
 <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-<script src="{{ url_for('static', filename='js/bootstrap-confirmation.min.js') }}"></script>
-<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script src="{{ url_for('static', filename='js/vendor/jquery-1.11.2.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/vendor/modernizr-2.8.3.min.js') }}"></script>
 </body>
 </html>
