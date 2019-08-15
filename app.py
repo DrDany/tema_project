@@ -30,7 +30,7 @@ def view():
     Show alls comments
     '''
     btc = binance_api.btcusd
-    return render_template('main.html', btc=btc)
+    return render_template('web/main.html', btc=btc)
 
 @app.route("/news")
 def news():
