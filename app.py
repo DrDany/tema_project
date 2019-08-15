@@ -8,19 +8,20 @@ from flask import Response
 app = Flask(__name__)
 
 
-# @app.route("/")
-# def index():
-#     '''
-#     Home page
-#     '''
-#     return render_template('.html')
-
-@app.route("/tst")
+@app.route("/")
 def index():
     '''
-    index page
+    Home page
+    '''
+    return redirect(url_for('view'))
+
+@app.route("/tst")
+def tst():
+    '''
+    tst page
    '''
-    return render_template('web/tst.html')
+    btc = binance_api.btcusd
+    return render_template('web/index.html', btc=btc)
 
 
 @app.route("/main")
